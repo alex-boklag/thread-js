@@ -1,4 +1,8 @@
 {
+    "eslint linebreak-style": [
+        "error",
+        "windows"
+    ],
     "env": {
         "browser": true,
         "es6": true
@@ -22,10 +26,25 @@
         "react"
     ],
     "rules": {
-        "semi": ["error", "always"],
-        "indent": ["error", 4, { "SwitchCase": 1 }],
-        "react/jsx-indent": ["error", 4],
-        "react/jsx-indent-props": ["error", 4],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
         "comma-dangle": "off",
         "import/no-unresolved": "off",
         "react/destructuring-assignment": "off",

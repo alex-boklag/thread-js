@@ -5,7 +5,7 @@ import moment from 'moment';
 
 import styles from './styles.module.scss';
 
-const Post = ({ post, likePost, toggleExpandedPost, sharePost }) => {
+const Post = ({ post, likePost, dislikePost, toggleExpandedPost, sharePost }) => {
     const {
         id,
         image,
@@ -39,7 +39,7 @@ const Post = ({ post, likePost, toggleExpandedPost, sharePost }) => {
                     <Icon name="thumbs up" />
                     {likeCount}
                 </Label>
-                <Label basic size="small" as="a" className={styles.toolbarBtn}>
+                <Label basic size="small" as="a" className={styles.toolbarBtn} onClick={() => dislikePost(id)}>
                     <Icon name="thumbs down" />
                     {dislikeCount}
                 </Label>
